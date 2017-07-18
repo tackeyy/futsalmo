@@ -2,6 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <button @click="call">call api</button>
+    <ul>
+      <li v-for="record in records">
+        {{ item.message }}
+      </li>
+    </ul>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -21,12 +27,19 @@
 </template>
 
 <script>
+import Api from './../api/base.js'
+
 export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      records: []
     }
+  },
+  methods: {
+    call: () =>
+      alert(Api.get())
   }
 }
 </script>
