@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <div class="block">
+      <div class="block">
+        <el-date-picker
+          v-model="value"
+          type="datetime"
+          placeholder="日付の選択">
+        </el-date-picker>
+      </div>
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -12,12 +20,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
