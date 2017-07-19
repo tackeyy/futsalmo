@@ -17,6 +17,6 @@ export default {
 }
 </script>
 
-<style>
-@import '~normalize.css'
+<style lang="stylus">
+  @import "~normalize.css"
 </style>
