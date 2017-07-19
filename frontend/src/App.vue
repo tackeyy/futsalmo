@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <div class="block">
-      <div class="block">
-        <el-date-picker
-          v-model="value"
-          type="datetime"
-          placeholder="日付の選択">
-        </el-date-picker>
-      </div>
-    </div>
+    <v-header></v-header>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+
+import Header from '@/components/Header'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'v-header': Header
+  }
 }
 </script>
 
 <style>
+@import '~normalize.css'
 </style>
