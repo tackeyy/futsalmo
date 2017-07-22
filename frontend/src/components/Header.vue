@@ -21,14 +21,14 @@
     display: flex
     justify-content: space-between
     background-color: #20A0FF
-    padding: 10px
+    padding: .5rem
 
   .header__section
     display: flex
     align-items: center
 
   .header__item
-    padding: 5px 15px
+    padding: .4rem .8rem
 
   .logoLink
     color: black
