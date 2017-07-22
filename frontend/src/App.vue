@@ -54,4 +54,7 @@ export default {
 
   .contentContainer
     margin: .5rem 5rem
+
+    .contentContainer__listItems
+      margin: 30px 0
 </style>
